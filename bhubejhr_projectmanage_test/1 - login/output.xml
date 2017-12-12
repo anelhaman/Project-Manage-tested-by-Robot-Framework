@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171206 15:24:15.902" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/rachen/Desktop/robot/bhubejhr_projectmanage_test/1 - login/case-1-pm-login.robot" id="s1" name="Case-1-Pm-Login">
+<test id="s1-t1" name="scenario-1-user could Login">
+<kw type="setup" name="OpenProject">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20171206 15:24:16.161" level="INFO">Opening browser 'googlechrome' to base url 'http://project.local'.</msg>
+<status status="PASS" endtime="20171206 15:24:23.604" starttime="20171206 15:24:16.160"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:23.646" starttime="20171206 15:24:23.605"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:23.671" starttime="20171206 15:24:23.646"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:23.704" starttime="20171206 15:24:23.671"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:23.705" starttime="20171206 15:24:16.160"></status>
+</kw>
+<kw name="Login">
+<arguments>
+<arg>0969962245</arg>
+<arg>dinsorsee</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20171206 15:24:23.706" level="INFO">Typing text '0969962245' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20171206 15:24:23.914" starttime="20171206 15:24:23.706"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20171206 15:24:23.915" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" endtime="20171206 15:24:24.071" starttime="20171206 15:24:23.915"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:24.124" starttime="20171206 15:24:24.072"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:24.124" starttime="20171206 15:24:23.705"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>สร้างโครงการใหม่</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:25.493" starttime="20171206 15:24:24.125"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171206 15:24:27.673" starttime="20171206 15:24:25.493"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:27.673" critical="yes" starttime="20171206 15:24:16.159"></status>
+</test>
+<test id="s1-t2" name="scenario-2-user account not found">
+<kw type="setup" name="OpenProject">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20171206 15:24:27.680" level="INFO">Opening browser 'googlechrome' to base url 'http://project.local'.</msg>
+<status status="PASS" endtime="20171206 15:24:33.959" starttime="20171206 15:24:27.680"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:34.009" starttime="20171206 15:24:33.960"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:34.044" starttime="20171206 15:24:34.009"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:34.072" starttime="20171206 15:24:34.044"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:34.072" starttime="20171206 15:24:27.679"></status>
+</kw>
+<kw name="Login">
+<arguments>
+<arg>0969962245</arg>
+<arg>xxxxx</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20171206 15:24:34.074" level="INFO">Typing text '0969962245' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20171206 15:24:34.260" starttime="20171206 15:24:34.073"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20171206 15:24:34.261" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" endtime="20171206 15:24:34.385" starttime="20171206 15:24:34.261"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:34.442" starttime="20171206 15:24:34.385"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:34.442" starttime="20171206 15:24:34.073"></status>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<doc>Verifies that an alert is present and, by default, accepts it.</doc>
+<arguments>
+<arg>ระบบทำงานผิดพลาด กรุณาลองใหม่อีกครั้ง!</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:35.219" starttime="20171206 15:24:34.442"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171206 15:24:37.395" starttime="20171206 15:24:35.220"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:37.396" critical="yes" starttime="20171206 15:24:27.677"></status>
+</test>
+<test id="s1-t3" name="scenario-3-password null">
+<kw type="setup" name="OpenProject">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20171206 15:24:37.401" level="INFO">Opening browser 'googlechrome' to base url 'http://project.local'.</msg>
+<status status="PASS" endtime="20171206 15:24:43.515" starttime="20171206 15:24:37.401"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:43.550" starttime="20171206 15:24:43.517"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:43.576" starttime="20171206 15:24:43.551"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>เข้าสู่ระบบ</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:43.611" starttime="20171206 15:24:43.577"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:43.611" starttime="20171206 15:24:37.400"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>0969962245</arg>
+</arguments>
+<msg timestamp="20171206 15:24:43.612" level="INFO">Typing text '0969962245' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20171206 15:24:43.798" starttime="20171206 15:24:43.612"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:44.062" starttime="20171206 15:24:43.798"></status>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<doc>Verifies that an alert is present and, by default, accepts it.</doc>
+<arguments>
+<arg>คุณยังไม่ได้กรอกรหัสผ่าน!</arg>
+</arguments>
+<status status="PASS" endtime="20171206 15:24:44.352" starttime="20171206 15:24:44.062"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171206 15:24:46.521" starttime="20171206 15:24:44.353"></status>
+</kw>
+<status status="PASS" endtime="20171206 15:24:46.522" critical="yes" starttime="20171206 15:24:37.399"></status>
+</test>
+<status status="PASS" endtime="20171206 15:24:46.525" starttime="20171206 15:24:15.905"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Case-1-Pm-Login" pass="3">Case-1-Pm-Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

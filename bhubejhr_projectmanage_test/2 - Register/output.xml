@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171209 16:30:27.128" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/rachen/Desktop/robot/bhubejhr_projectmanage_test/2 - Register/case-2-pm-register.robot" id="s1" name="Case-2-Pm-Register">
+<test id="s1-t1" name="scenario-5-shorter password">
+<kw type="setup" name="OpenProject">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>@{Container}[0]</arg>
+<arg>@{Container}[1]</arg>
+</arguments>
+<msg timestamp="20171209 16:30:27.412" level="INFO">Opening browser 'googlechrome' to base url 'http://project.local'.</msg>
+<status status="PASS" endtime="20171209 16:30:44.136" starttime="20171209 16:30:27.411"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//div['login']/div['note']/a)</arg>
+</arguments>
+<msg timestamp="20171209 16:30:44.138" level="INFO">Clicking element 'xpath=(//div['login']/div['note']/a)'.</msg>
+<status status="PASS" endtime="20171209 16:30:44.413" starttime="20171209 16:30:44.137"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20171209 16:30:44.455" starttime="20171209 16:30:44.414"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<status status="PASS" endtime="20171209 16:30:44.484" starttime="20171209 16:30:44.456"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=bio</arg>
+</arguments>
+<status status="PASS" endtime="20171209 16:30:44.519" starttime="20171209 16:30:44.484"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=btnSubmit</arg>
+</arguments>
+<status status="PASS" endtime="20171209 16:30:44.552" starttime="20171209 16:30:44.519"></status>
+</kw>
+<status status="PASS" endtime="20171209 16:30:44.552" starttime="20171209 16:30:27.410"></status>
+</kw>
+<kw name="Register">
+<arguments>
+<arg>${USR[1]}</arg>
+<arg>${USR[2]}</arg>
+<arg>${USR[3]}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=fullname</arg>
+<arg>${fullname}</arg>
+</arguments>
+<msg timestamp="20171209 16:30:44.555" level="INFO">Typing text '095789252' into text field 'id=fullname'.</msg>
+<status status="PASS" endtime="20171209 16:30:44.852" starttime="20171209 16:30:44.554"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20171209 16:30:44.852" level="INFO">Typing text 'IT' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20171209 16:30:44.970" starttime="20171209 16:30:44.852"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=bio</arg>
+<arg>${bio}</arg>
+</arguments>
+<msg timestamp="20171209 16:30:44.971" level="INFO">Typing text '1234' into text field 'id=bio'.</msg>
+<status status="PASS" endtime="20171209 16:30:45.093" starttime="20171209 16:30:44.970"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20171209 16:30:45.093" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" endtime="20171209 16:30:45.202" starttime="20171209 16:30:45.093"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20171209 16:30:45.247" starttime="20171209 16:30:45.202"></status>
+</kw>
+<status status="PASS" endtime="20171209 16:30:45.248" starttime="20171209 16:30:44.553"></status>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<doc>Verifies that an alert is present and, by default, accepts it.</doc>
+<arguments>
+<arg>ระบบทำงานผิดพลาด กรุณาลองใหม่อีกครั้ง!</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20171209 16:30:51.228" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20171209 16:30:51.229" starttime="20171209 16:30:50.349"></status>
+</kw>
+<msg timestamp="20171209 16:30:51.231" level="FAIL">Alert not found in 5 seconds.</msg>
+<status status="FAIL" endtime="20171209 16:30:51.231" starttime="20171209 16:30:45.250"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171209 16:30:53.411" starttime="20171209 16:30:51.232"></status>
+</kw>
+<status status="FAIL" endtime="20171209 16:30:53.411" critical="yes" starttime="20171209 16:30:27.409">Alert not found in 5 seconds.</status>
+</test>
+<status status="FAIL" endtime="20171209 16:30:53.414" starttime="20171209 16:30:27.131"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Case-2-Pm-Register" pass="0">Case-2-Pm-Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
